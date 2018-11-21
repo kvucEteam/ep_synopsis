@@ -1,28 +1,31 @@
 {
-	"mainHeader" : "HJÆLP TIL SYNOPSISARBEJDET",
-	"instruction" : "Her får du hjælp til at udarbejde din synopsis ved at udfylde felterne i skabelonen. Når du er færdig med dit arbejde, kan du downloade din synopsis som et worddokument.",
-	"templateData": {
-		"theme": "", 
-        "introduction": "", 
-        "problemformulation": "", 
+    "mainHeader": "HJÆLP TIL SYNOPSISARBEJDET",
+    "instruction": "Her får du hjælp til at udarbejde din synopsis ved at udfylde felterne i skabelonen. Når du er færdig med dit arbejde, kan du downloade din synopsis som et worddokument.",
+    "templateData": {
+        "theme": "",
+        "fagkombination": "",
+        "introduction": "",
+        "problemformulation": "",
+        "metode": "Ost",
+        "introtekster": [
+            "Her er noget info om indledningen",
+            "Her er noget info om problemformulering"
+        ],
         "subQuestions": [
-            {"subQuestion":"","answers":[""]},
-            {"subQuestion":"","answers":[""]},
-            {"subQuestion":"","answers":[""]},
-            {"subQuestion":"","answers":[""]}
-        ], 
+            { "subQuestion": "", "answers": [""] },
+            { "subQuestion": "", "answers": [""] },
+            { "subQuestion": "", "answers": [""] }
+        ],
         "conclusion": "",
         "bibliography": {
             "mandatory": [
-                {"source":"" ,"characterization":""},
-                {"source":"" ,"characterization":""},
-                {"source":"" ,"characterization":""},
-                {"source":"" ,"characterization":""},
-                {"source":"" ,"characterization":""}
+                { "source": "", "characterization": "" },
+                { "source": "", "characterization": "" },
+                { "source": "", "characterization": "" }
             ],
             "optional": [
-                {"source":"" ,"characterization":""},
-                {"source":"" ,"characterization":""}
+                { "source": "", "characterization": "" },
+                { "source": "", "characterization": "" }
             ]
         }
     }

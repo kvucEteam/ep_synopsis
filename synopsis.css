@@ -113,3 +113,15 @@ textarea {
 #wordOutput .checkQuestion{background-color: #acefed; padding: 10px 10px 10px 10px; margin-bottom: 25px}
 #wordOutput .useMaterial{background-color: #d2d4ec; padding: 10px 10px 10px 10px; margin-bottom: 25px}
 #wordOutput .innerSpacer{margin: 10px}
+
+.source{
+	margin-bottom: 20px !important;
+}
+
+.glyphicon-info-sign{
+    color: #888;
+}
+
+.info_hover{
+	width: 35%;
+}
