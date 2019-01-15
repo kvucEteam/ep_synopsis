@@ -1,16 +1,13 @@
 {
     "mainHeader": "HJÆLP TIL SYNOPSISARBEJDET",
-    "instruction": "Her får du hjælp til at udarbejde din synopsis ved at udfylde felterne i skabelonen. Når du er færdig med dit arbejde, kan du downloade din synopsis som et worddokument.",
+    "instruction": "Her får en skabelon til din EP synopsis. Udfyld felterne i skabelonen. Når du er færdig med dit arbejde, kan du downloade din synopsis som et worddokument.<br/> En synopsis skal være kort, 2-3 sider.",
     "templateData": {
         "theme": "",
         "fagkombination": "",
         "introduction": "",
         "problemformulation": "",
-        "metode": "Ost",
-        "introtekster": [
-            "Her er noget info om indledningen",
-            "Her er noget info om problemformulering"
-        ],
+        "metode": "",
+        "introtekster": [],
         "subQuestions": [
             { "subQuestion": "", "answers": [""] },
             { "subQuestion": "", "answers": [""] },
@@ -30,3 +27,5 @@
         }
     }
 }
+
+
