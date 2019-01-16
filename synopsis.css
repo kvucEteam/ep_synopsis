@@ -90,6 +90,10 @@ textarea {
     margin-right: 4px;
 }
 
+.glyphicon-remove{    margin-right: 3px;
+    margin-top: 0px;
+    font-size: 15px;}
+
 .reduceWidth{
 	max-width: 83%;
 }
@@ -124,4 +128,6 @@ textarea {
 
 .info_hover{
 	width: 35%;
+cursor: pointer;
+
 }
