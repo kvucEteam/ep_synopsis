@@ -114,7 +114,7 @@ textarea {
 #wordOutput table {width:95%; margin-left:12px}
 #wordOutput td {padding:10px 10px 10px 10px}
 #wordOutput ol {color: #000}
-#wordOutput .checkQuestion{background-color: #acefed; padding: 10px 10px 10px 10px; margin-bottom: 25px}
+#wordOutput .checkQuestion{background-color: #acefed; padding: 10px 10px 10px 10px; margin: 35px 25px 25px 0px}
 #wordOutput .useMaterial{background-color: #d2d4ec; padding: 10px 10px 10px 10px; margin-bottom: 25px}
 #wordOutput .innerSpacer{margin: 10px}
 

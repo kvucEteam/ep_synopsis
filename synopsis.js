@@ -1,4 +1,4 @@
-var infoArray = ["Infotekst om Emne","Infotekst om Indledning", "Infotekst om noget andet", "Infotekst om noget andet","Infotekst om noget andet","Infotekst om noget andet","Infotekst om noget andet"];
+var infoArray = ["Infotekst om Emne","Du skal ikke nødvendigvis skrive en indledning, men det kan være en god ide, at introducere læseren til hvad du vil arbejde med.", "Infotekst om noget andet", "Infotekst om noget andet","Infotekst om noget andet","Infotekst om noget andet","Infotekst om noget andet"];
 
 function htmlEntities(str) {
     return String(str).replace(/\$/g, '&#36;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -144,7 +144,8 @@ function template() {
     // HTML +=      '<h2>Titel, indledning og problemformulering</h2>';
     HTML += '<div class="textindent">';
 
-    HTML += '<h3>Emne</h3>';
+    //HTML += '<h3>Emne</h3>';
+    HTML += '<h3 class="info_hover">Emne <span class="glyphicon glyphicon-info-sign"></span></h3>';
     HTML += returnInputBoxes4(1, 'studentTheme studentInput', obj.theme, 'Skriv dit emne her...');
     HTML += '<h3>Fagkombination</h3>';
     HTML += returnInputBoxes4(1, 'studentFag studentInput', obj.fagkombination, 'Skriv de fag du skriver i her...');
@@ -180,7 +181,7 @@ function template() {
     HTML += '</div>';
     HTML += '<span id="addNewSubQuestion" class="btn btn-info"><span class="glyphicons glyphicons-plus"></span>Tilføj et underspørgsmål</span>';
 
-    HTML += '<h3 class="info_hover">Metodiske overvejelser <span class="glyphicon glyphicon-info-sign"></span></h3>';
+    HTML += '<h3 class="info_hover">Metode <span class="glyphicon glyphicon-info-sign"></span></h3>';
     HTML += '<textarea id="metode" class="studentInput" value="' + obj.metode + '" placeholder="Skriv din metode her...">' + obj.metode + '</textarea>';
 
     HTML += '</div>';
@@ -358,7 +359,7 @@ function bibliography(indexNo, bibObj) {
     var HTML = '';
     HTML += '<div class="bibliographyWrap">';
     HTML += '<div class="textindent">';
-    HTML += '<h3>Kilde ' + indexNo + '</h3>';
+    HTML += '<h3>' + indexNo + '. Materiale</h3>';
     HTML += returnInputBoxes4(1, 'source studentInput', bibObj.source, 'Skriv materialets forfatter, titel, forlag og udgivelsesår');
     // HTML +=      '<div class="clear"></div>';
     // HTML +=      '<h3>Karakteristik af materialet</h3>';
@@ -689,7 +690,7 @@ function wordTemplate() {
     HTML += '</head>';
     HTML += '<body>';
     HTML += '<h3>Emne</h3>';
-    HTML += '<h1>' + obj.theme + '</h1>';
+    HTML += '<p>' + obj.theme + '</p>';
     HTML += '<h3>Fagkombination</h3>';
     HTML += '<p>' + obj.fagkombination + '</p>';
 
@@ -742,7 +743,7 @@ function wordTemplate() {
     }
 */
     var count = 1;
-    HTML += '<h3>Litteraturliste</h3>';
+    HTML += '<h3>Materialer</h3>';
     for (var n in obj.bibliography.optional) {
         var bib = obj.bibliography.optional[n];
         HTML += (bib.source.length > 0) ? '<b>Materiale ' + count + ': </b>' + bib.source + '<br>' : '';
