@@ -1,4 +1,4 @@
-var infoArray = ["Infotekst om Emne","Du skal ikke nødvendigvis skrive en indledning, men det kan være en god ide, at introducere læseren til hvad du vil arbejde med.", "Infotekst om noget andet", "Infotekst om noget andet","Infotekst om noget andet","Infotekst om noget andet","Infotekst om noget andet"];
+var infoArray = ["Infotekst om Emne","Du skal ikke nødvendigvis skrive en indledning, men det kan være en god ide, at introducere læseren til hvad du vil arbejde med.", "1) Infotekst om noget andet", "2) Infotekst om noget andet","3) Infotekst om noget andet","4) Infotekst om noget andet","5) Infotekst om noget andet"];
 
 function htmlEntities(str) {
     return String(str).replace(/\$/g, '&#36;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
