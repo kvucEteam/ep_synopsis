@@ -1,4 +1,4 @@
-var infoArray = ["Infotekst om Emne","Du skal ikke nødvendigvis skrive en indledning, men det kan være en god ide, at introducere læseren til hvad du vil arbejde med.", "1) Infotekst om noget andet", "2) Infotekst om noget andet","3) Infotekst om noget andet","4) Infotekst om noget andet","5) Infotekst om noget andet"];
+var infoArray = ["Her skriver du emnet for dit fællesfaglige eksamensprojekt – så klart og præcist som muligt.","Du skal ikke nødvendigvis skrive en indledning, men det kan være en god ide, at introducere læseren til hvad du vil arbejde med.", "I en fællesfaglig problemformulering skal begge fag være med til at besvare spørgsmålet. Der skal være en klar sammenhæng mellem hovedspørgsmål og underspørgsmål og det er vigtigt at tænke på at spørgsmålene skal lægge op til at arbejde på flere forskellige taksonomiske niveauer.", "Her skal du kort beskrive dine fremgangsmåder, dvs. den måde som du har arbejdet fagligt med dit emne og din problemformulering på. Skriv gerne både lidt om hvordan du har brugt fagene enkeltvis og hvordan de har kunnet spille sammen i besvarelsen af det overordnede emne.","Besvar din problemformulering ved hjælp af en opsummering af dine svar på de enkelte underspørgsmål. Du skal skrive konklusionen som en sammenhængende tekst - ikke i stikordsform.","Når du skal lave din litteraturliste, er det en god ide at dele materialet op i forskellige typer, f.eks. bøger, artikler, hjemmesider, film, mv. En litteraturliste er altid alfabetisk og placeres til sidst i din synopsis. Det er i øvrigt en god ide at lave din litteraturliste løbende.","5) Infotekst om noget andet"];
 
 function htmlEntities(str) {
     return String(str).replace(/\$/g, '&#36;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -211,7 +211,7 @@ function template() {
     HTML += '<h2 class="info_hover"> Konklusion <span class="glyphicon glyphicon-info-sign"></span></h2>';
 
     HTML += '<div class="textindent">';
-    HTML += '<p>Besvar din problemformulering ved hjælp af en opsummering af dine svar på de enkelte underspørgsmål. Du skal skrive konklusionen som en sammenhængende tekst - ikke i stikordsform.</p>';
+    // HTML += '<p>Besvar din problemformulering ved hjælp af en opsummering af dine svar på de enkelte underspørgsmål. Du skal skrive konklusionen som en sammenhængende tekst - ikke i stikordsform.</p>';
     HTML += '<textarea id="conclusion" class="studentInput" value="' + obj.conclusion + '" placeholder="Skriv din konklusion her...">' + obj.conclusion + '</textarea>';
     HTML += '</div>';
 
